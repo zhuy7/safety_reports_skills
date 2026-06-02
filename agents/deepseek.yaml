@@ -1,0 +1,8 @@
+version: 1
+display_name: Accident Safety Analysis Skills
+short_description: PDF → accident chain extraction and phrase → taxonomy tree classification.
+default_prompt: Use the safety-reports-skill and accident-phrase-taxonomy-skill as needed.
+
+provider:
+  base_url: https://api.deepseek.com
+  default_model: deepseek-chat

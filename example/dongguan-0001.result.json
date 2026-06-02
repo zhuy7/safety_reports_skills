@@ -1,0 +1,111 @@
+{
+  "record_id": "dongguan-0001",
+  "title": "dongguan-0001",
+  "summary": {
+    "zh": "2025年7月27日，东莞大朗镇一在建民房电梯安装过程中，无证施工人员龚万林未佩戴安全带，从17米高无防护平台坠落身亡。事故主因是安全管理缺失、违规搭建脚手架、未设生命线及持证上岗制度落实不到位。劳务承包人徐艳兵及速达公司等单位存在管理缺陷，项目经理未履职，出借资质致监管缺位。",
+    "en": "On July 27, 2025, during elevator installation at a construction site in Dalang, Dongguan, unlicensed worker Gong Wanlin fell 17 meters from an unprotected platform without wearing a safety belt, resulting in fatal injuries. The primary causes included safety management failure, improper scaffold construction, lack of lifelines, and failure to enforce certification requirements. Labor contractor Xu Yanbing, Suda Company, and others exhibited management deficiencies, with project managers failing to supervise and qualification lending leading to regulatory gaps."
+  },
+  "accident_chain": {
+    "items": [
+      {
+        "item_id": "E1",
+        "item_type": "actor",
+        "role": "worker",
+        "summary_text_zh": "无证施工人员",
+        "summary_text_en": "unlicensed worker"
+      },
+      {
+        "item_id": "E2",
+        "item_type": "actor",
+        "role": "contractor",
+        "summary_text_zh": "劳务承包人",
+        "summary_text_en": "labor contractor"
+      },
+      {
+        "item_id": "E3",
+        "item_type": "actor",
+        "role": "management_defect",
+        "summary_text_zh": "安全管理缺失",
+        "summary_text_en": "safety management failure"
+      },
+      {
+        "item_id": "E4",
+        "item_type": "action",
+        "role": "unsafe_action",
+        "summary_text_zh": "未防护进入高处平台",
+        "summary_text_en": "entering elevated platform without protection"
+      },
+      {
+        "item_id": "E5",
+        "item_type": "violation",
+        "role": "regulatory_violation",
+        "summary_text_zh": "无证上岗且未佩戴安全带",
+        "summary_text_en": "working at height without certification or safety belt"
+      },
+      {
+        "item_id": "E6",
+        "item_type": "condition",
+        "role": "hazardous_condition",
+        "summary_text_zh": "非标搭建无防护平台",
+        "summary_text_en": "improvised platform without edge protection"
+      },
+      {
+        "item_id": "E7",
+        "item_type": "equipment",
+        "role": "unsafe_equipment",
+        "summary_text_zh": "简易脚手架平台存在缝隙",
+        "summary_text_en": "platform with gaps on scaffold"
+      },
+      {
+        "item_id": "E8",
+        "item_type": "environment",
+        "role": "dangerous_environment",
+        "summary_text_zh": "高处作业无生命线",
+        "summary_text_en": "no lifeline for high-altitude work"
+      },
+      {
+        "item_id": "E9",
+        "item_type": "outcome",
+        "role": "accident_result",
+        "summary_text_zh": "高处坠落致死及经济损失",
+        "summary_text_en": "fatal fall and economic loss"
+      },
+      {
+        "item_id": "E10",
+        "item_type": "measure",
+        "role": "preventive_measure",
+        "summary_text_zh": "落实安全交底与持证上岗",
+        "summary_text_en": "safety briefing and certified personnel only"
+      },
+      {
+        "item_id": "E11",
+        "item_type": "measure",
+        "role": "regulatory_measure",
+        "summary_text_zh": "纳入监管并开展防坠行动",
+        "summary_text_en": "include in supervision and prevent falls"
+      },
+      {
+        "item_id": "E12",
+        "item_type": "condition",
+        "role": "management_defect",
+        "summary_text_zh": "出借资质虚假报建",
+        "summary_text_en": "lending qualification for false registration"
+      },
+      {
+        "item_id": "E13",
+        "item_type": "actor",
+        "role": "project_manager",
+        "summary_text_zh": "项目经理未履职",
+        "summary_text_en": "project manager failed to supervise"
+      }
+    ]
+  },
+  "metadata": {
+    "generated_at": "2026-04-07T19:43:16",
+    "parse_method": "pypdf_text_layer",
+    "llm": {
+      "model": "qwen-plus-2025-07-28",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1"
+    }
+  }
+}

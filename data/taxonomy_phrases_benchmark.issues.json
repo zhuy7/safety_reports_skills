@@ -1,0 +1,67 @@
+{
+  "source_path": "data\\taxonomy_phrases_benchmark评测.jsonl",
+  "cleaning_policy": {
+    "fixed_malformed_json_lines": true,
+    "normalized_negative_samples_to_null_layer_and_score": true,
+    "deduplicated_identical_phrases": true,
+    "preserved_original_positive_labels": true
+  },
+  "known_limitations": [
+    "The prompt text says higher scores are more abstract, but the examples and labels are more consistent with higher scores being more specific/concrete.",
+    "This cleaned dataset preserves original labels. Downstream training should document how score semantics are interpreted.",
+    "The benchmark is imbalanced toward taxonomy-negative samples and management-layer positives."
+  ],
+  "counts": {
+    "clean_rows": 255,
+    "positive_rows": 109,
+    "negative_rows": 146,
+    "layer_counts": {
+      "人": 25,
+      "物": 16,
+      "环": 8,
+      "管": 60
+    },
+    "score_counts": {
+      "2": 5,
+      "3": 12,
+      "4": 30,
+      "5": 62
+    }
+  },
+  "issues": {
+    "source_path": "data\\taxonomy_phrases_benchmark评测.jsonl",
+    "bad_json_lines": [
+      {
+        "line": 96,
+        "error": "missing colon between completion key and value",
+        "raw_line": "{   \"prompt\": \"安装机械设备开门停车装置是taxonomy里的元素吗？如果是，它属于人/物/环/管哪一层面？他的语义抽象程度按照1-5打分，分值越高代表越具体，例如：人的不安全行为=1分，未佩戴安全防护=2分，未正确佩戴安全带=4分，没有佩戴安全帽=4分；那么安装机械设备开门停车装置打分是多少分？\",   \"completion\" \"{\\\"in_taxonomy\\\": false, \\\"layer\\\": null, \\\"score\\\": null}\" }",
+        "repaired": true
+      }
+    ],
+    "negative_rows_normalized": [
+      {
+        "line": 14,
+        "phrase": "未设置临时支撑措施",
+        "normalized_label": {
+          "in_taxonomy": false,
+          "layer": null,
+          "score": null
+        },
+        "original_completion": "{\"in_taxonomy\": false, \"layer\":  \"人\", \"score\": 5}"
+      }
+    ],
+    "duplicate_rows_removed": [
+      {
+        "kept_line": 105,
+        "removed_line": 111,
+        "phrase": "未佩戴劳动防护用品",
+        "label": {
+          "in_taxonomy": true,
+          "layer": "人",
+          "score": 3
+        }
+      }
+    ],
+    "conflicting_duplicates": []
+  }
+}
