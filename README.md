@@ -1,3 +1,5 @@
+[English](README.md) | [中文](README.zh-CN.md)
+
 # Safety Reports Skill
 
 Two independent skills for safety incident analysis:
@@ -18,11 +20,11 @@ pip install -e ".[file]"
 ## CLI Commands
 
 ```bash
-# Pipeline A: PDF → accident chain
+# Pipeline A: safety report → accident chain
 safety-reports-skill --file example/dongguan-0001.pdf --output-dir outputs --model deepseek-chat
 
 # Or with pasted text:
-# safety-reports-skill --text "事故报告内容..." --output-dir outputs --model deepseek-chat
+safety-reports-skill --text "accident report content..." --output-dir outputs --model deepseek-chat
 
 # Pipeline B: phrases → taxonomy tree
 accident-phrase-taxonomy-skill --input data/taxonomy_phrases_unique.json --output outputs/taxonomy.json
